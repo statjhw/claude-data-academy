@@ -1,5 +1,12 @@
 # 🎓 Claude Data Academy
 
+[![npm version](https://badge.fury.io/js/claude-data-academy.svg)](https://www.npmjs.com/package/claude-data-academy)
+[![GitHub stars](https://img.shields.io/github/stars/statjhw/claude-data-academy.svg?style=social&label=Star)](https://github.com/statjhw/claude-data-academy)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-blue.svg)](https://claude.ai)
+[![Data Academy](https://img.shields.io/badge/Type-Data%20Academy-brightgreen.svg)](https://github.com/statjhw/claude-data-academy)
+[![Korean](https://img.shields.io/badge/Language-한국어-red.svg)](https://github.com/statjhw/claude-data-academy)
+
 Claude Code 프로젝트에 데이터 학습 선생님 에이전트를 설치하는 NPX CLI 도구입니다.
 
 ## ✨ 특징
