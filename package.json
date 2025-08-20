@@ -38,10 +38,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/claude-data-learning-teachers.git"
+    "url": "git+https://github.com/statjhw/claude-data-academy.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/claude-data-learning-teachers/issues"
+    "url": "https://github.com/statjhw/claude-data-academy/issues"
   },
-  "homepage": "https://github.com/your-username/claude-data-learning-teachers#readme"
+  "homepage": "https://github.com/statjhw/claude-data-academy#readme"
 }
