@@ -18,7 +18,7 @@ ${chalk.gray('데이터 분야 학습용 선생님 에이전트 설치 도구')}
 program
   .name('claude-data-learning-teachers')
   .description('Claude Code 프로젝트에 데이터 학습 선생님 에이전트를 설치합니다')
-  .version('1.0.1')
+  .version('1.0.3')
   .option('-a, --all', '모든 선생님 설치')
   .option('-t, --teachers <names>', '특정 선생님들 설치 (쉼표로 구분)')
   .option('-l, --list', '설치된 선생님 목록 표시')

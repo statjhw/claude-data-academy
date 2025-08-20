@@ -1,6 +1,6 @@
 {
   "name": "claude-data-academy",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Claude Code용 데이터 학습 선생님 에이전트 NPX 설치 도구",
   "main": "bin/cli.js",
   "bin": {
@@ -37,14 +37,14 @@
   "author": "statjhw",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^9.2.0",
-    "fs-extra": "^11.1.0",
     "chalk": "^4.1.2",
-    "commander": "^11.0.0"
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^8.2.7"
   },
   "devDependencies": {
-    "jest": "^29.5.0",
-    "eslint": "^8.42.0"
+    "eslint": "^8.42.0",
+    "jest": "^29.5.0"
   },
   "engines": {
     "node": ">=16.0.0",
