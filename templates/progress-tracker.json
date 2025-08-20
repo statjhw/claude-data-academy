@@ -1,0 +1,339 @@
+{
+  "template_version": "1.0.0",
+  "description": "Progress tracking template for data learning teachers",
+  "learner": {
+    "level": "{{learning_level}}",
+    "start_date": "{{current_date}}",
+    "current_week": 1,
+    "timezone": "UTC",
+    "preferred_study_time": {
+      "weekdays": ["19:00", "21:00"],
+      "weekends": ["10:00", "18:00"]
+    },
+    "learning_style": {
+      "pace": "normal",
+      "preferred_format": ["hands-on", "project-based"],
+      "difficulty_preference": "progressive"
+    }
+  },
+  "teachers": {
+    "_template": {
+      "enrolled": true,
+      "enroll_date": "{{current_date}}",
+      "current_topic": "introduction",
+      "progress": 0,
+      "completed_tasks": 0,
+      "total_tasks": 12,
+      "last_interaction": null,
+      "preferred_difficulty": "intermediate",
+      "notes": []
+    }
+  },
+  "achievements": [
+    {
+      "title": "학습 여정 시작",
+      "description": "Claude Code 데이터 학습 선생님과 함께 여정을 시작했습니다",
+      "date": "{{current_date}}",
+      "category": "milestone",
+      "badge": "🌱",
+      "teachers": []
+    }
+  ],
+  "weekly_goals": {
+    "current_week": 1,
+    "goals": [
+      {
+        "id": "week1_setup",
+        "title": "학습 환경 설정",
+        "description": "개발 환경을 구축하고 첫 번째 대화를 시작하세요",
+        "priority": "high",
+        "estimated_hours": 3,
+        "status": "pending",
+        "tasks": [
+          "선생님과 첫 인사하기",
+          "학습 목표 설정하기",
+          "개발 환경 점검하기"
+        ]
+      }
+    ]
+  },
+  "study_sessions": {
+    "total_sessions": 0,
+    "total_hours": 0,
+    "average_session_length": 0,
+    "sessions": [],
+    "_session_template": {
+      "date": "YYYY-MM-DD",
+      "start_time": "HH:MM",
+      "end_time": "HH:MM",
+      "duration_minutes": 0,
+      "teacher": "teacher_name",
+      "topic": "topic_name",
+      "activities": [],
+      "mood_before": 1,
+      "mood_after": 1,
+      "effectiveness": 1,
+      "notes": "",
+      "next_steps": []
+    }
+  },
+  "skills_tracking": {
+    "technical_skills": {
+      "programming": {
+        "python": {"level": 0, "last_updated": null},
+        "sql": {"level": 0, "last_updated": null},
+        "r": {"level": 0, "last_updated": null},
+        "git": {"level": 0, "last_updated": null}
+      },
+      "data_tools": {
+        "pandas": {"level": 0, "last_updated": null},
+        "numpy": {"level": 0, "last_updated": null},
+        "matplotlib": {"level": 0, "last_updated": null},
+        "scikit_learn": {"level": 0, "last_updated": null},
+        "tableau": {"level": 0, "last_updated": null},
+        "power_bi": {"level": 0, "last_updated": null}
+      },
+      "cloud_platforms": {
+        "aws": {"level": 0, "last_updated": null},
+        "gcp": {"level": 0, "last_updated": null},
+        "azure": {"level": 0, "last_updated": null}
+      },
+      "databases": {
+        "postgresql": {"level": 0, "last_updated": null},
+        "mongodb": {"level": 0, "last_updated": null},
+        "redis": {"level": 0, "last_updated": null}
+      }
+    },
+    "soft_skills": {
+      "problem_solving": {"level": 0, "last_updated": null},
+      "communication": {"level": 0, "last_updated": null},
+      "project_management": {"level": 0, "last_updated": null},
+      "collaboration": {"level": 0, "last_updated": null}
+    },
+    "domain_knowledge": {
+      "statistics": {"level": 0, "last_updated": null},
+      "machine_learning": {"level": 0, "last_updated": null},
+      "data_visualization": {"level": 0, "last_updated": null},
+      "business_intelligence": {"level": 0, "last_updated": null}
+    }
+  },
+  "projects": {
+    "completed": [],
+    "in_progress": [],
+    "planned": [],
+    "_project_template": {
+      "id": "project_id",
+      "title": "프로젝트 제목",
+      "description": "프로젝트 설명",
+      "teacher": "담당 선생님",
+      "difficulty": "beginner|intermediate|advanced",
+      "estimated_hours": 0,
+      "start_date": null,
+      "end_date": null,
+      "status": "planned|in_progress|completed|paused",
+      "completion_percentage": 0,
+      "skills_practiced": [],
+      "tools_used": [],
+      "github_repo": null,
+      "demo_link": null,
+      "reflection": {
+        "what_learned": [],
+        "challenges_faced": [],
+        "improvements_needed": [],
+        "next_steps": []
+      },
+      "feedback": {
+        "teacher_feedback": "",
+        "self_assessment": 0,
+        "peer_feedback": []
+      }
+    }
+  },
+  "learning_preferences": {
+    "preferred_learning_time": {
+      "morning": false,
+      "afternoon": false,
+      "evening": true,
+      "night": false
+    },
+    "session_length": {
+      "short": false,
+      "medium": true,
+      "long": false
+    },
+    "learning_style": {
+      "visual": true,
+      "auditory": false,
+      "kinesthetic": true,
+      "reading": true
+    },
+    "feedback_frequency": "immediate",
+    "challenge_level": "progressive"
+  },
+  "challenges_and_blockers": {
+    "current_challenges": [],
+    "resolved_challenges": [],
+    "_challenge_template": {
+      "id": "challenge_id",
+      "title": "도전 과제 제목",
+      "description": "상세 설명",
+      "category": "technical|conceptual|time_management|motivation",
+      "severity": "low|medium|high",
+      "date_identified": null,
+      "date_resolved": null,
+      "status": "active|resolved|on_hold",
+      "attempts": [],
+      "solution": null,
+      "lessons_learned": []
+    }
+  },
+  "study_groups": {
+    "joined_groups": [],
+    "created_groups": [],
+    "_group_template": {
+      "id": "group_id",
+      "name": "스터디 그룹명",
+      "description": "그룹 설명",
+      "focus_areas": [],
+      "members_count": 0,
+      "meeting_schedule": "",
+      "communication_channel": "",
+      "join_date": null,
+      "role": "member|moderator|leader"
+    }
+  },
+  "resources": {
+    "bookmarks": [],
+    "completed_courses": [],
+    "reading_list": [],
+    "_bookmark_template": {
+      "title": "리소스 제목",
+      "url": "https://example.com",
+      "category": "documentation|tutorial|article|video|course",
+      "tags": [],
+      "added_date": null,
+      "rating": 0,
+      "notes": ""
+    }
+  },
+  "reflection_journal": {
+    "weekly_reflections": [],
+    "monthly_reviews": [],
+    "_reflection_template": {
+      "date": "YYYY-MM-DD",
+      "period": "week|month|quarter",
+      "achievements": [],
+      "challenges": [],
+      "learnings": [],
+      "mood": 1,
+      "motivation_level": 1,
+      "goals_for_next_period": [],
+      "areas_for_improvement": [],
+      "gratitude": []
+    }
+  },
+  "certificates_and_badges": {
+    "earned_badges": [
+      {
+        "name": "학습 시작",
+        "emoji": "🌱",
+        "description": "데이터 학습 여정을 시작했습니다",
+        "earned_date": "{{current_date}}",
+        "criteria": "첫 번째 선생님과 대화 시작"
+      }
+    ],
+    "available_badges": [
+      {
+        "name": "첫 프로젝트 완성",
+        "emoji": "🎯",
+        "description": "첫 번째 프로젝트를 성공적으로 완성했습니다",
+        "criteria": "첫 번째 실습 프로젝트 완료"
+      },
+      {
+        "name": "일주일 연속 학습",
+        "emoji": "🔥",
+        "description": "7일 연속으로 학습 활동을 수행했습니다",
+        "criteria": "7일 연속 study_session 기록"
+      },
+      {
+        "name": "코드 리뷰 전문가",
+        "emoji": "👨‍💻",
+        "description": "선생님으로부터 5번의 코드 리뷰를 받았습니다",
+        "criteria": "5번 이상의 코드 리뷰 완료"
+      },
+      {
+        "name": "문제 해결사",
+        "emoji": "🧩",
+        "description": "복잡한 문제를 스스로 해결했습니다",
+        "criteria": "high severity 도전 과제 해결"
+      },
+      {
+        "name": "협력자",
+        "emoji": "🤝",
+        "description": "다른 학습자를 도와주었습니다",
+        "criteria": "스터디 그룹 참여 또는 peer feedback 제공"
+      },
+      {
+        "name": "꾸준한 학습자",
+        "emoji": "📚",
+        "description": "한 달 동안 꾸준히 학습했습니다",
+        "criteria": "30일 동안 주 3회 이상 학습"
+      },
+      {
+        "name": "기술 블로거",
+        "emoji": "✍️",
+        "description": "학습 내용을 블로그에 정리했습니다",
+        "criteria": "3개 이상의 학습 포스트 작성"
+      },
+      {
+        "name": "프로젝트 마스터",
+        "emoji": "🏆",
+        "description": "5개 이상의 프로젝트를 완성했습니다",
+        "criteria": "5개 이상의 프로젝트 완료"
+      }
+    ]
+  },
+  "analytics": {
+    "learning_velocity": {
+      "tasks_per_week": 0,
+      "hours_per_week": 0,
+      "projects_per_month": 0
+    },
+    "engagement_metrics": {
+      "teacher_interactions": 0,
+      "questions_asked": 0,
+      "feedback_received": 0,
+      "help_given_to_others": 0
+    },
+    "skill_progression": {
+      "fastest_growing_skills": [],
+      "skills_needing_attention": [],
+      "overall_progression_rate": 0
+    }
+  },
+  "settings": {
+    "notifications": {
+      "daily_reminders": true,
+      "weekly_summary": true,
+      "achievement_alerts": true,
+      "deadline_warnings": true
+    },
+    "privacy": {
+      "share_progress": false,
+      "anonymous_analytics": true,
+      "public_profile": false
+    },
+    "auto_tracking": {
+      "session_detection": true,
+      "skill_level_updates": true,
+      "project_progress": true
+    }
+  },
+  "metadata": {
+    "created_date": "{{current_date}}",
+    "last_updated": "{{current_date}}",
+    "version": "1.0.0",
+    "backup_enabled": true,
+    "sync_enabled": false
+  }
+}

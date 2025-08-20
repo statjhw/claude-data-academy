@@ -1,0 +1,47 @@
+{
+  "name": "claude-data-learning-teachers",
+  "version": "1.0.0",
+  "description": "Claude Code용 데이터 학습 선생님 에이전트 설치 도구",
+  "main": "bin/cli.js",
+  "bin": {
+    "claude-data-learning-teachers": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "jest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [
+    "claude-code",
+    "data-learning",
+    "education",
+    "teachers",
+    "mentoring",
+    "npx",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.2.0",
+    "fs-extra": "^11.1.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "eslint": "^8.42.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/claude-data-learning-teachers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/claude-data-learning-teachers/issues"
+  },
+  "homepage": "https://github.com/your-username/claude-data-learning-teachers#readme"
+}
