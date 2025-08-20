@@ -1,6 +1,6 @@
 {
   "name": "claude-data-academy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Claude Code용 데이터 학습 선생님 에이전트 NPX 설치 도구",
   "main": "bin/cli.js",
   "bin": {

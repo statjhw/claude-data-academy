@@ -18,7 +18,7 @@ ${chalk.gray('데이터 분야 학습용 선생님 에이전트 설치 도구')}
 program
   .name('claude-data-learning-teachers')
   .description('Claude Code 프로젝트에 데이터 학습 선생님 에이전트를 설치합니다')
-  .version('1.0.0')
+  .version('1.0.1')
   .option('-a, --all', '모든 선생님 설치')
   .option('-t, --teachers <names>', '특정 선생님들 설치 (쉼표로 구분)')
   .option('-l, --list', '설치된 선생님 목록 표시')
@@ -33,12 +33,16 @@ program.action(async (options) => {
     const projectInfo = await validateClaudeProject(process.cwd());
     
     if (!projectInfo.isValid) {
-      console.error(chalk.red('❌ Claude Code 프로젝트를 찾을 수 없습니다.'));
-      console.error(chalk.yellow('💡 Claude Code 프로젝트 디렉토리에서 실행해주세요.'));
+      console.error(chalk.red('❌ 설치 실패:'));
+      console.error(chalk.yellow(`   ${projectInfo.reason}`));
+      console.log();
+      console.log(chalk.blue('💡 해결 방법:'));
+      console.log(chalk.gray('   1. 프로젝트 디렉토리에 쓰기 권한이 있는지 확인하세요'));
+      console.log(chalk.gray('   2. 다른 위치에서 다시 시도해보세요'));
       process.exit(1);
     }
 
-    console.log(chalk.green('✅ Claude Code 프로젝트를 확인했습니다!'));
+    console.log(chalk.green('✅ Claude Code 환경을 확인했습니다!'));
     console.log(chalk.gray(`📁 현재 위치: ${process.cwd()}`));
     console.log();
 
