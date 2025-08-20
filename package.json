@@ -1,27 +1,40 @@
 {
-  "name": "claude-data-learning-teachers",
+  "name": "claude-data-academy",
   "version": "1.0.0",
-  "description": "Claude Code용 데이터 학습 선생님 에이전트 설치 도구",
+  "description": "Claude Code용 데이터 학습 선생님 에이전트 NPX 설치 도구",
   "main": "bin/cli.js",
   "bin": {
-    "claude-data-learning-teachers": "./bin/cli.js"
+    "claude-data-academy": "./bin/cli.js"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "teachers/",
+    "templates/",
+    "README.md"
+  ],
+  "preferGlobal": false,
   "scripts": {
     "start": "node bin/cli.js",
     "test": "jest",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "npm run lint"
   },
   "keywords": [
     "claude-code",
     "data-learning",
+    "data-engineering",
+    "data-science",
+    "mlops",
     "education",
     "teachers",
     "mentoring",
     "npx",
-    "cli"
+    "cli",
+    "learning-agents"
   ],
-  "author": "",
+  "author": "statjhw",
   "license": "MIT",
   "dependencies": {
     "inquirer": "^9.2.0",
@@ -34,7 +47,8 @@
     "eslint": "^8.42.0"
   },
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   },
   "repository": {
     "type": "git",
